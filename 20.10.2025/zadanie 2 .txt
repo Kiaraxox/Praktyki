@@ -1,0 +1,2 @@
+Zadanie 2. Załadowanie danych
+Napisać polecenia SQL, któe wsyatwią dane do stworzonej wcześniej bazy danych. Dane dostępne są w pliku books.xml
