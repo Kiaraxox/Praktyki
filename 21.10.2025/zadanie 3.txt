@@ -1,0 +1,212 @@
+Przed wykonaniem tych zadań pobierz z dowolnej strony np "Lubimy czytać", "empik" itp, dane o dodatkowych 15 książkach i dodaj do poprawionej bazy danych. 
+Nie potrzeba dodawać w tym momencie informacji o okładce. To zrobimy później.
+
+
+1. Pobierz wysztkie tytuły książek zaczynające się od "ASP.NET"
+2. Pobierz wysztkie tytuły książek zawierające "ASP.NET"
+3. Pobierz Autorów, których imiona zaczynają się na 'R'
+4. Pobierz Autorów, których imiona zaczynają się na 'J' lub 'L'
+5. Podaj tytuły książek, napisanych przez Autorów, których nazwisko zaczyna się na 'K'
+6. Podaj tytuły książek, któych ilość w magazynie > 0
+7. Policz ile trzeba zapłacić zapłacić za wszystkie książki o SQL
+8. Jaka jest średnia cena książek w magazuenie
+9. Pobierz Tytuł, Nazwisko Autora, ISBN, Opis oraz Cenę książki o id 6.
+10. Dla każdej książki pobierz wszystkie jej informacje
+
+
+1.
+-ID: 13
+-AUTOR: Edyta Świętek
+-Tytuł: Cień burzowych chmur
+-ISBN: 9788327746849
+-CENA: 24,81
+-ILOSC: 190
+-OPIS: Epicka saga rodzinna osadzona w dramatycznych realiach powojennej Polski.
+Druga wojna światowa dobiegła końca, jednak na małopolskiej wsi wciąż czuć strach i niepewność. Bronek – najstarszy z szóstki rodzeństwa – z dumą pracuje w rodzinnym gospodarstwie, które przed laty niemal dorównywało majątkom ziemiaństwa. Gdy ojciec poległ na froncie, to właśnie on musiał się stać głową rodziny.
+Nadeszła jednak nowa władza i nastały nowe porządki. Reforma rolna, bezwzględny zarządca spółdzielni Bartłomiej Marczak oraz osobiste konflikty sprawiają, że Bronek traci dorobek pokoleń. Zmuszony do ucieczki z rodzinnej wsi podejmuje pracę przy budowie Nowej Huty – symbolu rodzącej się Polski Ludowej. Wkrótce dołącza do niego młodsza siostra Julia uciekająca przed obsesyjną nienawiścią Marczaka.
+Czy rodzeństwo zdoła ocalić siebie i odnaleźć nadzieję w brutalnej powojennej rzeczywistości? A może przeszłość dopadnie ich nawet wśród rusztowań i cegieł powstającej Nowej Huty.
+W tej porywającej opowieści o miłości, zemście i walce o przetrwanie autorka mistrzowsko maluje obraz życia w cieniu wczesnego PRL-u. To historia rodzinna, w której każdy wybór ma swoją cenę.
+
+2.
+-ID: 14
+-AUTOR: J.K. Rowling
+-Tytuł: Harry Potter i Komnata Tajemnic
+-ISBN: 9788382659726
+-CENA: 19,99
+-ILOSC: 2387
+-OPIS: "Harry Potter i Komnata Tajemnic" w wyjątkowym wydaniu z kultowymi ilustracjami Mary GrandPré!
+Wydanie jubileuszowe to ukłon w stronę nostalgii i powrót do estetyki, którą wielu dorosłych czytelników pamięta ze swoich pierwszych egzemplarzy Harry’ego Pottera.
+Z okazji dwudziestopięciolecia pierwszego polskiego wydania serii o młodym czarodzieju przygotowano specjalną edycję z oryginalną okładką Mary GrandPré.
+Wyrusz w sentymentalną podróż z książką, która stała się globalnym fenomenem i do dziś rozpala wyobraźnię milionów czytelników.
+To doskonała okazja, by ponownie zanurzyć się w pełnej tajemnic i przygód historii, która zachwyca czytelników od pokoleń i na zawsze odmieniła literaturę fantasy dla młodzieży.
+
+3.
+-ID: 15
+-AUTOR: Antoine de Saint-Exupéry
+-Tytuł: Mały Książę
+-ISBN: 9788368132281
+-CENA: 7,32
+-ILOSC: 4343
+-OPIS: Ekskluzywne wydanie z barwionymi brzegami.
+Poetycka opowieść o miłości, przyjaźni i odpowiedzialności Antoine''a de Saint-Exupéry''ego została przetłumaczone na ponad 270 języków i należy do klasyki literatury światowej. Historia wrażliwego złotowłosego chłopca, wzbogacona pięknymi ilustracjami autora, od lat wzrusza dzieci i dorosłych na całym świecie.
+
+4.
+-ID:16
+-AUTOR: Katarzyna Małecka
+-Tytuł: Bound to the King
+-ISBN: 9788384183458
+-CENA: 30,64
+-ILOSC: 4
+-OPIS: Dwudziestosześcioletnia Reva Mariana Souza ma w życiu jeden cel – chce walczyć z przestępczością w rodzinnym Rio de Janeiro. Szkolona przez ojca, wyrasta na odważną i nieugiętą kobietę. Jako agentka elitarnej jednostki policji żyje w tempie niepozwalającym jej na chwilę wytchnienia.
+Choć praca jest jej pasją, Reva zmaga się z oczekiwaniami rodziców, którzy nie mogą pogodzić się z tym, że córka wykazuje brak zainteresowania sprawami sercowymi. Pod wpływem nacisków kobieta zgadza się przyjąć oświadczyny swojego chłopaka, choć nie czuje się przekonana do małżeństwa.
+Wszystko zmienia się w dniu, gdy jej oddział wpada w zasadzkę, a Reva zostaje porwana i trafia w szpony Saverio Bragi – legendy brazylijskiego świata przestępczego. Mężczyzna ma swoje powody, by młodziutka agentka trafiła pod jego dach.
+Reva nie jest kobietą, która chowa się w kącie. Walczy o swoją wolność, ale im dłużej przebywa w towarzystwie Saviero, tym bardziej zaczyna dostrzegać, że pod maską brutala kryje się coś, czego nie spodziewała się ujrzeć.
+Książka zawiera treści nieodpowiednie dla osób poniżej osiemnastego roku życia.
+
+5.
+-ID: 17
+-AUTOR: Agnieszka Jeż
+-Tytuł: Śmierć w skalnym lesie
+-ISBN: 9788368381665
+-CENA:28
+-ILOSC: 0
+-OPIS: Kiedyś
+Kiedy Anka poznaje Staszka, cieślę z Podhala, który przyjechał do jej rodzinnego miasta za pracą, od razu się w nim zakochuje. Niedługo potem zachodzi w ciążę. Para bierze ślub i zamieszkuje w domu babki Staszka na Nędzówce. Anka zaczyna pracę w pensjonacie w Kościelisku, a na świecie pojawiają się kolejne dzieci. Tymczasem Staszek coraz częściej zagląda do kieliszka. Kobieta zmuszona jest wziąć na siebie odpowiedzialność za dom i finanse.
+Pewnego dnia Staszek znika. Żona twierdzi, że jak zwykle wyjechał do pracy i pewnie nie wróci przez dłuższy czas. Mimo to ludzie zaczynają plotkować...
+Teraz
+Para turystów wyrusza na wędrówkę po Tatrzańskim Parku Narodowym. Młodzi postanawiają zejść ze szlaku, by zobaczyć miejsce owiane legendą – Wantule, tajemniczy las w Dolinie Miętusiej. Mówi się, że dawno temu zbocza okolicznych turni osunęły się, by pogrzebać niegodziwych gazdów pod zwałami kamieni. Uwagę pary przykuwa błyszczący przedmiot w strumieniu. Postanawiają zabrać go ze sobą do Kościeliska, by znaleźć jego właściciela.
+Tymczasem na Podhale trafiają komisarze z Archiwum X, chcący rozwiązać sprawę tajemniczego zaginięcia sprzed lat. Przypadkiem spotykają turystów, którzy pokazują im znalezisko z Wantul. Okazuje się, że to obrączka Staszka, co przekonuje Archiwum, że poszukiwany nie zniknął tak po prostu. Śledczy zagłębiają się w sprawę o wiele bardziej zawiłą i mroczną, niż ktokolwiek mógł przypuszczać...
+
+
+
+6.
+-ID: 18
+-AUTOR: Monika Magoska-Suchar
+-Tytuł: Mój stalker
+-ISBN:9788397460638
+-CENA:39,99
+-ILOSC: 4
+-OPIS: Matt Willis po utracie pracy w policji układa sobie życie jako prywatny detektyw. Jego skuteczność, dyskrecja oraz dawne kontakty zapewniają mu pracę u najbardziej wpływowych i bogatych mieszkańców Los Angeles. Jeden z jego klientów zleca mu niecodzienne zadanie – Matt ma śledzić jego nieślubną córkę Pamelę, z którą mężczyzna nie miał do tej pory kontaktu. Ma też strzec jej cnoty do czasu, aż do kraju wróci kandydat, którego ojciec wybrał jej na męża. Początkowo detektyw nie jest przekonany do tego zlecenia, ale szybko zmienia zdanie, gdy okazuje się, że dziewczyna jest bardzo w jego typie.
+Pamela wychowała się bez ojca i w dzieciństwie przeszła przez piekło przemocy domowej za sprawą matki, która wikłała się w kolejne toksyczne związki. Dorosła Pam jest więc przekonana, że mężczyźni to zło i lepiej ich unikać. Jednak pewnego dnia jej sąsiadem zostaje charyzmatyczny bad boy, któremu dziewczyna nie umie się oprzeć. Tylko czy powinna mu ufać?
+– Wróciłaś... – mruknąłem do siebie, nakierowując obiektyw lunety obserwacyjnej na okno sypialni należącej do Pameli, które nie było zasłonięte firanką ani roletą. – Pokaż mi się, skarbie, ładnie proszę...
+Powieść spodoba się fankom motywów forbidden romance, age gap oraz stalkera.
+
+7.
+-ID: 19
+-AUTOR: Leszek Orłowski
+-Tytuł: Barca. Burzliwa dekada
+-ISBN:9788383307664
+-CENA:34,34
+-ILOSC:0
+-OPIS: Od Messiego do Yamala – historia kryzysu i odrodzenia Barcelony
+Gdy Barça pod wodzą Luisa Enrique sięgnęła po potrójną koronę, dokładając do Pucharu Króla i mistrzostwa Hiszpanii zwycięstwo w Lidze Mistrzów, wydawało się, że nie ma siły, która mogłaby ją powstrzymać. Tymczasem niedługo później rozpoczął się powolny i bolesny okres zawirowań. Góry przepalonych pieniędzy, fatalne decyzje transferowe, nietrafieni trenerzy, afery na boisku i poza nim, w końcu wyjątkowo nieudolne zarządzanie – to wszystko niemal doprowadziło do katastrofy. Leszek Orłowski postanowił dokładnie zbadać, dlaczego do tego doszło i komu Barcelona zawdzięcza ocalenie.
+Czy Iniesta, Busquets, Piqué i Jordi Alba byli współodpowiedzialni za problemy finansowe klubu? Czy sam Leo Messi nie stał się w pewnym momencie przyczyną regresu drużyny? W jaki sposób Robert Lewandowski stanął na czele odbudowy zespołu, którą przeprowadził Hansi Flick? Komu przeszkadzało, że Wojciech Szczęsny popalał papierosy? I za co Lamine Yamal uwielbiał Ronaldinho Gaúcho?
+Jeden z największych polskich znawców hiszpańskiej piłki wybiera się w długą podróż przez labirynty najnowszych dziejów Dumy Katalonii. W pełnej anegdot, spisków i nieoczywistych wniosków opowieści w bezkompromisowy sposób przedstawia dziesięć lat Barçy, która pod wodzą Josepa Marii Bartomeu o mało co nie zsunęła się na dno. Jednocześnie ukazuje momenty, w których do gry wkroczyli Joan Laporta i nowi bohaterowie, dzięki którym Blaugrana w cudowny sposób się odrodziła, dając radość milionom kibiców.
+Choć nie wiadomo, czy ta bajkowa historia zakończy się szczęśliwie, nowa fala wychowanków z Lamine’em Yamalem na czele ma szansę ponownie wprowadzić Barcelonę tam, gdzie jest jej miejsce: na futbolowy szczyt.
+
+
+
+8.
+-ID: 20
+-AUTOR: Cat Gray
+-Tytuł: Łowca dusz z Elbow Alley
+-ISBN:9788381419468
+-CENA:23,49
+-ILOSC:2
+-OPIS: Dwunastoletni Pipp Ruskin przeprowadza się z rodzicami do Londynu. Ojciec ma tu prowadzić sklep ze starociami w starej kamienicy przy Elbow Alley 32. W dniu przyjazdu Pipp poznaje dziewczynę z sąsiedztwa, Fliss, która go ostrzega: „Jeśli tu zostaniecie, wydarzy się coś złego”. Tej samej nocy w mieszkaniu zaczynają się dziać dziwne rzeczy, a nad ranem Pipp odkrywa, że ktoś musiał podmienić mu rodziców, bo nagle stają się nieobecni; żadne nie zwraca na niego uwagi. Okazuje się, że Elbow Alley to nie miejsce dla zwykłych ludzi. Tutaj żyją wyłącznie wiedźmy, duchy, wampiry, banshee, upiory. Od jakiegoś czasu po dzielnicy krąży łowca dusz. Poluje na dusze tych, którzy mimo ostrzeżeń tu zamieszkają. Łowca wysysa dusze, zabierając całą osobowość człowieka, a puste ciała porzuca jak wydrążone muszle. Właśnie to przydarzyło się rodzicom Pippa. A przecież Fliss ostrzegała!
+
+9.
+-ID: 21
+-AUTOR: A.P. Mist
+-Tytuł: Szept przeszłości
+-ISBN: 9788382908541
+-CENA:32,69
+-ILOSC:6
+-OPIS: Mia trafia do niewielkiego hotelu w górskim miasteczku, gdzie błaga o zatrudnienie i wynajęcie pokoju. Ostatecznie właścicielka, która nigdy nie odmawia pomocy, pozwala jej zostać, czując, że za dziewczyną ciągnie się mroczna historia.
+Bojąca się własnego cienia młoda kobieta, pomimo powściągliwości i wyraźnego braku zaufania do kogokolwiek, zostaje przyjęta przez lokalną, wąską społeczność.
+Zaczyna wkupywać się w łaski wszystkich odwiedzających hotelową knajpkę, lecz jeden ze stałych klientów – Mason – jest wyraźnie przeciwny jej obecności w tym miejscu.
+Wszystko zmienia się w chwili, gdy to on staje się tym, którego pomocy Mia potrzebuje, a ratunek, który jej niesie, znacznie przekracza granice jego kompetencji.
+
+10.
+-ID: 22
+-AUTOR: Hanna Szczukowska-Białys
+-Tytuł: Przetok
+-ISBN: 9788384061954
+-CENA:31,49
+-ILOSC:5
+-OPIS:Czasem największe zbrodnie rodzą się z miłości – „Przetok” Hanny Szczukowskiej-Białys to naładowany emocjami thriller psychologiczny, który zapada w pamięci na długo.
+Dominika próbuje poradzić sobie z żałobą po śmierci matki i odbudować życie, które legło w gruzach. Jakub zmaga się z dramatem nieuleczalnej choroby ojca i decyzjami, które na zawsze zmienią ich relację. Los splata ich drogi w najmniej oczekiwany sposób, a wspólne cierpienie prowadzi ku granicy, za którą kończy się moralność i zaczyna ciemna strona ludzkiej natury.
+Mateusz wraca do rodzinnego miasta, próbując zacząć wszystko od nowa. Gdy podejmuje pracę kierowcy charyzmatycznego księdza Wirtela, jego życie niespodziewanie wkracza na niebezpieczne tory. Duchowny skrywa mroczną tajemnicę, a próba odkrycia prawdy okaże się początkiem śmiertelnie niebezpiecznej gry.
+„Przetok” to thriller psychologiczny pełen napięcia, tajemnic i emocji. To historia o wierze, winie, granicach moralności i o tym, że zło potrafi narodzić się tam, gdzie najmniej się go spodziewamy.
+„Duszny klimat, pogłębiająca się niepewność i finał tak bolesny, że będziecie o nim myśleć jeszcze długo po odłożeniu książki. Świetny thriller!” – Klaudia Muniak
+
+
+
+11.
+-ID: 23
+-AUTOR: Anna Chrzanowska
+-Tytuł: Odnaleziony uśmiech
+-ISBN:9788384230688
+-CENA:16,96
+-ILOSC:0
+-OPIS: Czasem wystarczy jedno „cześć”, żeby odmienić wszystko!
+Karol właśnie się przeprowadził. Nowe miasto, nowa szkoła, nowi ludzie… A on czuje się bardzo, bardzo samotny. Do czasu. Pewnego dnia spotyka kota o niezwykle inteligentnym spojrzeniu i jego właścicielkę – pannę Zuzannę, zgryźliwą staruszkę, którą dzieci z osiedla nazywają „wiedźmą”. Właśnie to dziwne spotkanie staje się początkiem wielkiej zmiany – nie tylko w życiu Karola, ale też całej okolicy!
+„Odnaleziony uśmiech” to pełna ciepła i humoru opowieść o sile przyjaźni, magii codziennych chwil i o tym, że czasem zgubić można coś bardzo ważnego… a potem – niespodziewanie – znów to odnaleźć.
+Dla młodych osób, które mierzą się z nowym początkiem. I dla dorosłych, którzy chcą im w tym towarzyszyć.
+
+
+
+12.
+-ID: 24
+-AUTOR: Andrzej Kopacki
+-Tytuł: Ta ciemna ćma
+-ISBN: 9788367948357
+-CENA:27,79
+-ILOSC:0
+-OPIS: Wiersze na resztkę życia. Czyli? Takie, które krążą wokół życiowej kulminacji i tego, co przychodzi w ślad za nią, złowróżbnie i niechybnie: schyłek życia, na koniec śmierć.
+„Co z tym począć – pyta Andrzej Kopacki – że starość jest nie tylko przyjemnym matem wrześniowego słońca, ale też dotkliwym antagonizmem: między poczuciem bogactwa rzekomo pouczających przeżyć a ich zbędnością? Między spektakularną manifestacją potrzeb witalnych a natrętną refleksją nad życiowym kresem? […] Tu właśnie jesteś, starcze, staruszko: pomiędzy”. Śmierć wyziera z życiowego tła, a wiersz i namysł nad nim każą pamiętać o tkance doświadczeń: o „twarzach życia”, o figurach dziewczęcia i mędrca, dzieciaka i narcyza.
+One także, obok motywów czysto tanatycznych, jak grecki młodzian z opuszczoną pochodnią czy danse macabre, należą do pejzażu nad rzeką pogranicza między życiem a śmiercią.
+Niniejsza książka jest wybiórczą relacją z lirycznych wędrówek po tym dorzeczu: od wczesnonowoczesnych wierszy niemieckich przez niemieckojęzyczną lirykę XX wieku po całkiem spory suplement polski, który dostarcza materii porównawczej. A ćma?
+W jednym z wierszy siedzi na ścianie, niby pospolita, a przecież zagadkowa.
+Czym albo kim jest? Literatura próbuje dać odpowiedź. Ta ciemna ćma o tych próbach opowiada.
+
+
+13.
+-ID: 25
+-AUTOR: Lucy Maud Montgomery
+-Tytuł: Anne z Zielonych Szczytów
+-ISBN:9788367022637
+-CENA:14,79
+-ILOSC:2711
+-OPIS: Jedna z najbardziej kultowych powieści wszech czasów teraz w nowym – najbliższym oryginałowi – tłumaczeniu.
+Pierwsza część niezwykle popularnego cyklu powieści o przygodach rudowłosej Anne Shirley. Akcja powieści toczy się na Wyspie Księcia Edwarda w latach siedemdziesiątych XIX wieku. Jedenastoletnia Anne opuszcza sierociniec i trafia do państwa Cuthbertów. Ich pierwsze spotkanie jest pełne emocji, ponieważ Anne miała być chłopcem i została adoptowana, aby pomagać w gospodarstwie. Marilla Cuthbert początkowo chce odesłać dziewczynkę, ale gadatliwa, obdarzona niezwykłą wyobraźnią Anne szybko zaskarbia sobie sympatię mrukliwego Matthew Cuthberta i ostatecznie zostaje w ich domu. Niedługo później poznaje Dianę Barry, z którą się zaprzyjaźnia, zaskakuje wszystkich przefarbowaniem włosów na zielono i dodaniem do ciasta waleriany zamiast wanilii. W jej życiu pojawia się także Gilbert Blythe, ale po tym, jak przezywa ją „Marchewka”, nie może liczyć na zbyt wiele. Dodatkowo między nim a Anne trwa rywalizacja o tytuł najlepszego ucznia. Losy Anne to wiele zabawnych i zaskakujących sytuacji, które do dziś wywołują uśmiech na twarzach starszych i młodszych czytelniczek.
+Pierwszy tom przygód Anne Shirley ukazał się w 1908 roku. Wielkim wielbicielem powieści był między innymi Mark Twain.
+
+14.
+-ID: 26
+-AUTOR: Adalyn Grace
+-Tytuł: Foxglove
+-ISBN:9788383197791
+-CENA:25,51
+-ILOSC:150
+-OPIS: Intrygująca, magiczna, gotycka opowieść, rozgrywająca się wśród szelestu jedwabi, lśniących posadzek sal balowych i ogrodów rodzących śmiercionośne rośliny.
+Właściciel Thorn Grove, Elijah Hawthorne zostaje oskarżony o zabójstwo.
+Los, perfidny brat Śmierci, zamieszkał w pobliskiej posiadłości. W przeszłości boleśnie skrzywdzony, za wszelką cenę pragnie zemsty i zadośćuczynienia, którym ma być... Signa Farrow. Zaangażowane w ratowanie Hawthorne’a dziewczyna i jej kuzynka Blythe podejmują ryzykowną grę. Odkrywają nowe, nieznane wcześniej moce, które zmieniają bieg wydarzeń w Thorn Grove. Szukając mordercy, wikłają się w sieć dworskich intryg i złowrogich tajemnic, przez co ich przyjaźń zawiśnie na włosku.
+
+15.
+-ID: 27
+-AUTOR: John Ajvide Lindqvist
+-Tytuł: Pozwól mi wejść
+-ISBN:9788383356761
+-CENA:43,19
+-ILOSC:95
+-OPIS: Ciemność zaprasza. Ale nie każdego. Czy odważysz się otworzyć drzwi… i wpuścić ją do środka?
+Blackeberg, spokojne przedmieście Sztokholmu, skrywa coś więcej niż nudę codzienności. Nieśmiały i zakompleksiony dwunastoletni Oskar mieszka z matką. Nie ma przyjaciół, w szkole jest przedmiotem nieustannych drwin i szyderstw, koledzy dręczą go i prześladują. Pewnego dnia do sąsiedniego mieszkania wprowadza się Eli. Jest rówieśniczką Oskara, ale nie chodzi do szkoły. I opuszcza dom tylko po zmroku. Chłopiec dostrzega w niej bratnią duszę — inność, samotność i tajemnicę. Jednak Eli nie jest taka jak inni… Nagle w okolicy zostaje znalezione ciało nastolatka – bez kropli krwi. Lecz Oskara bardziej intryguje fakt, że ofiara to jego prześladowca. A przecież jest ich wielu…
+Pozwól mi wejść to mroczna, hipnotyzująca opowieść o dojrzewaniu, potrzebie bliskości i granicach człowieczeństwa. John Ajvide Lindqvist, nazywany „szwedzkim Stephenem Kingiem”, splata grozę z melancholią w sposób, który zapada głęboko w pamięć.
+„Cudownie ponura i oszczędna w emocjach. Kapitalne połączenie horroru z thrillerem i opowieścią o dojrzewaniu” „Kirkus Reviews”
+
+
+
+
+
+

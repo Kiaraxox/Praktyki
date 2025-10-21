@@ -1,0 +1,33 @@
+Zadanie 1. Tworzenie nowej bazy danych:
+
+Nazwa bazy danych: Ksiegarnia
+
+Tabele: 
+
+1. Autorzy:
+- ID (klucz główny, unikalny, autoinkrementacja)
+- Imie (ciąg znaków max 20)
+- Nazwisko (ciąg znaków max 25)
+
+2. Ksiazki: 
+- ID (klucz główny, unikalny, autoinkrementacja)
+- Tytul (ciąg znaków max 100)
+- ISBN (ciąg znaków max 17)
+
+3. SzczegoloweInformacje:
+- ID (klucz główny, unikalny, autoinkrementacja)
+- IDKsiazki (klucz obcy do tabeli Ksiazki)
+
+- Opis (ciąg znaków max 200)
+- Okladka (ciąg znaków max 100) 
+
+4 Magazyn:
+- ID (klucz główny, unikalny, autoinkrementacja)
+- IDKsiazki (klucz obcy do tabeli Ksiazki)
+- Cena (typ decimal, 3 miejsca przed przecinkiem oraz 2 miejsca po przecinku)
+- Ilosc (typ liczbowy)
+
+5. KsiażkaZAutorem
+- ID 
+- IDKsiazki (klucz obcy do tabeli Ksiązki)
+- IDAutora (klucz obcy do tabeli Autorzy) 
