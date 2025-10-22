@@ -2,6 +2,8 @@
 
 2.SELECT Tytul FROM ksiazki WHERE Tytul LIKE '%ASP.NET%';
 
+2a. SELECT Tytul FROM ksiazki WHERE Tytul LIKE 'ASP$NET';
+
 3.SELECT * FROM autorzy WHERE Imie LIKE 'R%';
 
 4.SELECT * FROM autorzy WHERE Imie LIKE 'J%' OR Imie LIKE 'L%';
@@ -163,6 +165,7 @@ Los, perfidny brat Śmierci, zamieszkał w pobliskiej posiadłości. W przeszło
 Blackeberg, spokojne przedmieście Sztokholmu, skrywa coś więcej niż nudę codzienności. Nieśmiały i zakompleksiony dwunastoletni Oskar mieszka z matką. Nie ma przyjaciół, w szkole jest przedmiotem nieustannych drwin i szyderstw, koledzy dręczą go i prześladują. Pewnego dnia do sąsiedniego mieszkania wprowadza się Eli. Jest rówieśniczką Oskara, ale nie chodzi do szkoły. I opuszcza dom tylko po zmroku. Chłopiec dostrzega w niej bratnią duszę — inność, samotność i tajemnicę. Jednak Eli nie jest taka jak inni… Nagle w okolicy zostaje znalezione ciało nastolatka – bez kropli krwi. Lecz Oskara bardziej intryguje fakt, że ofiara to jego prześladowca. A przecież jest ich wielu…
 Pozwól mi wejść to mroczna, hipnotyzująca opowieść o dojrzewaniu, potrzebie bliskości i granicach człowieczeństwa. John Ajvide Lindqvist, nazywany „szwedzkim Stephenem Kingiem”, splata grozę z melancholią w sposób, który zapada głęboko w pamięć.
 „Cudownie ponura i oszczędna w emocjach. Kapitalne połączenie horroru z thrillerem i opowieścią o dojrzewaniu” „Kirkus Reviews”');
+
 
 
 
