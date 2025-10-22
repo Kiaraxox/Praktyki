@@ -20,6 +20,8 @@ DELETE FROM szczegoloweinformacje WHERE ID = 5;
 
 DELETE FROM szczegoloweinformacje WHERE ID = 8;
 
+DELETE FROM szczegoloweinformacje WHERE ID IN (2, 5, 8);
+
 DELETE FROM szczegoloweinformacje WHERE IDKsiazki = 12;
 
 DELETE FROM magazyn WHERE IDKsiazki = 2;
@@ -29,6 +31,8 @@ DELETE FROM magazyn WHERE IDKsiazki = 5;
 DELETE FROM magazyn WHERE IDKsiazki = 8;
 
 DELETE FROM magazyn WHERE IDKsiazki = 12;
+
+DELETE FROM magazyn WHERE IDKsiazki IN (2, 5, 8, 12);
 
 ALTER TABLE magazyn DROP FOREIGN KEY magazyn_ibfk_1;
 
@@ -78,6 +82,7 @@ ALTER TABLE SzczegoloweInformacje ADD CONSTRAINT szczegoloweinformacje_ibfk_1 FO
 
 
 ALTER TABLE Magazyn ADD CONSTRAINT magazyn_ibfk_1 FOREIGN KEY (IDKsiazki) REFERENCES Ksiazki(ID);
+
 
 
 
