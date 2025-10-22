@@ -8,17 +8,38 @@
 
 4.SELECT * FROM autorzy WHERE Imie LIKE 'J%' OR Imie LIKE 'L%';
 
-5.SELECT ksiazki.Tytul FROM ksiazki INNER JOIN autorzy ON ksiazki.ID=autorzy.ID;
+5.SELECT kza.IDAutora, kza.IDKsiazki, a.Nazwisko, K.Tytul, m.Cena
+FROM ksiazkazautorem kza
+INNER JOIN autorzy a ON kza.IDAutora = a.ID 
+INNER JOIN ksiazki K ON kza.IDKsiazki = K.ID
+INNER JOIN magazyn m ON k.ID = m.IDKsiazki
+WHERE Nazwisko LIKE 'K%';
 
-6.SELECT ksiazki.Tytul FROM ksiazki INNER JOIN magazyn ON ksiazki.ID=magazyn.ID WHERE magazyn.ilosc > 0;
+6.SELECT Tytul FROM ksiazki K
+INNER JOIN magazyn m ON m.IDKsiazki = K.ID
+WHERE Ilosc > 0;
 
-7.SELECT SUM(magazyn.Cena * magazyn.Ilosc) FROM ksiazki JOIN magazyn ON ksiazki.ID=magazyn.ID  WHERE ksiazki.Tytul LIKE '%SQL%';
+7.SELECT SUM(magazyn.Cena * magazyn.Ilosc) 
+  FROM ksiazki 
+  JOIN magazyn ON ksiazki.ID=magazyn.IDKsiazki 
+  WHERE ksiazki.Tytul LIKE '%SQL%';
 
 8.SELECT AVG(Cena) FROM magazyn;
 
-9.SELECT ksiazki.Tytul, autorzy.Nazwisko, ksiazki.ISBN, szczegoloweinformacje.Opis, magazyn.Cena FROM ksiazki JOIN ksiazkazautorem ON ksiazki.ID = ksiazkazautorem.IDKsiazki JOIN autorzy ON ksiazkazautorem.IDAutora = autorzy.ID JOIN szczegoloweinformacje ON ksiazki.ID = szczegoloweinformacje.IDKsiazki JOIN magazyn ON ksiazki.ID = magazyn.IDKsiazki WHERE ksiazki.ID = 6;
+9.SELECT ksiazki.Tytul, autorzy.Nazwisko, ksiazki.ISBN, szczegoloweinformacje.Opis, magazyn.Cena 
+  FROM ksiazki 
+  JOIN ksiazkazautorem ON ksiazki.ID = ksiazkazautorem.IDKsiazki 
+  JOIN autorzy ON ksiazkazautorem.IDAutora = autorzy.ID 
+  JOIN szczegoloweinformacje ON ksiazki.ID = szczegoloweinformacje.IDKsiazki 
+  JOIN magazyn ON ksiazki.ID = magazyn.IDKsiazki 
+  WHERE ksiazki.ID = 6;
 
-10.SELECT  ksiazki.ID, ksiazki.Tytul, autorzy.Imie, autorzy.Nazwisko, ksiazki.ISBN, szczegoloweinformacje.Opis, magazyn.Cena, magazyn.Ilosc FROM ksiazki JOIN ksiazkazautorem ON ksiazki.ID = ksiazkazautorem.IDKsiazki JOIN autorzy ON ksiazkazautorem.IDAutora = autorzy.ID JOIN szczegoloweinformacje ON ksiazki.ID = szczegoloweinformacje.IDKsiazki JOIN magazyn ON ksiazki.ID = magazyn.IDKsiazki;
+10.SELECT  ksiazki.ID, ksiazki.Tytul, autorzy.Imie, autorzy.Nazwisko, ksiazki.ISBN, szczegoloweinformacje.Opis, magazyn.Cena, magazyn.Ilosc 
+  FROM ksiazki 
+  JOIN ksiazkazautorem ON ksiazki.ID = ksiazkazautorem.IDKsiazki 
+  JOIN autorzy ON ksiazkazautorem.IDAutora = autorzy.ID 
+  JOIN szczegoloweinformacje ON ksiazki.ID = szczegoloweinformacje.IDKsiazki 
+  JOIN magazyn ON ksiazki.ID = magazyn.IDKsiazki;
 
 
 
@@ -165,6 +186,7 @@ Los, perfidny brat Śmierci, zamieszkał w pobliskiej posiadłości. W przeszło
 Blackeberg, spokojne przedmieście Sztokholmu, skrywa coś więcej niż nudę codzienności. Nieśmiały i zakompleksiony dwunastoletni Oskar mieszka z matką. Nie ma przyjaciół, w szkole jest przedmiotem nieustannych drwin i szyderstw, koledzy dręczą go i prześladują. Pewnego dnia do sąsiedniego mieszkania wprowadza się Eli. Jest rówieśniczką Oskara, ale nie chodzi do szkoły. I opuszcza dom tylko po zmroku. Chłopiec dostrzega w niej bratnią duszę — inność, samotność i tajemnicę. Jednak Eli nie jest taka jak inni… Nagle w okolicy zostaje znalezione ciało nastolatka – bez kropli krwi. Lecz Oskara bardziej intryguje fakt, że ofiara to jego prześladowca. A przecież jest ich wielu…
 Pozwól mi wejść to mroczna, hipnotyzująca opowieść o dojrzewaniu, potrzebie bliskości i granicach człowieczeństwa. John Ajvide Lindqvist, nazywany „szwedzkim Stephenem Kingiem”, splata grozę z melancholią w sposób, który zapada głęboko w pamięć.
 „Cudownie ponura i oszczędna w emocjach. Kapitalne połączenie horroru z thrillerem i opowieścią o dojrzewaniu” „Kirkus Reviews”');
+
 
 
 
