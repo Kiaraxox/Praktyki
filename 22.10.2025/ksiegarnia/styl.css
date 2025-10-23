@@ -30,12 +30,12 @@ a {
     font-size: 14px;
 }
 
-#books {
+.ksiazki {
     margin: 0;
     padding: 0 20;
 }
 
-#books h2 {
+.ksiazki h2 {
     text-align: center;
     font-size: 18px;
     padding: 5px 0;
@@ -45,13 +45,13 @@ a {
     background-color: rgb(36, 84, 112);
 }
 
-#content {
+.zawartosc {
   display: flex;
   flex-direction: column;
   align-items: center; 
 }
 
-.book {
+.ksiazka {
   display: flex;
   align-items: flex-start;
   gap: 20px;
@@ -79,7 +79,6 @@ a {
   border-radius: 10px;
 }
 
-.title, .info p {
+.Tytul, .info p {
   text-align: left;      
 }
-
