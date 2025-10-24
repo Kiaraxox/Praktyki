@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title></title>
+</head>
+<body>
+    <header>
+       <h1>Ksiegarnia</h1>
+    </header>
+
+    <nav>
+            <a href="Index.html">Dostępne książki</a>
+            |
+            <a href="add_book.html">Dodaj Książkę</a>
+    </nav>
+
+    <div class="ksiazki">
+        <h2>Dostępne książki</h2>
+    </div>
+
+    <div class="zawartosc-formularz">
+        <form action="" method="POST">
+            <table>
+
+            <tr>
+            <td><strong>Tytuł</strong></td> 
+            <td><input type="text" name="Tytul"></td>
+            </tr>
+
+            <tr>
+            <td><strong>Autor</strong></td> 
+            <td><input type="text" name="Autor"></td>
+            </tr>
+
+            <tr>
+            <td><strong>Cena</strong></td> 
+            <td><input type="text" name="Cena"></td>
+            </tr>
+
+            <tr>
+            <td><strong>ISBN</strong></td> 
+            <td><input type="number" name="ISBN"></td>
+            </tr>
+
+           <tr>
+            <td><strong>Ilość</strong></td> 
+            <td><input type="number" name="Ilosc"></td>
+            </tr>
+
+            <tr>
+            <td><strong>Strony</strong></td> 
+            <td><input type="number" name="strony"></td>
+            </tr>
+
+           <tr>
+            <td><strong>Opis</strong></td> 
+            <td><textarea type="text" name="opis"></textarea></td>
+            </tr>
+
+            <tr>
+            <td colspan="2">
+            <input type="reset" value="Wyczyść">
+            <input type="submit" value="Zapisz">
+            </td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
