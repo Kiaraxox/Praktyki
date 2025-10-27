@@ -1,0 +1,218 @@
+body { 
+  font-family: Arial, Helvetica, sans-serif; 
+  padding: 0; 
+  margin: 0; 
+  background-color: rgb(100, 157, 190); 
+} 
+
+header { 
+  padding: 5px 0; 
+  margin: 0; 
+  background-color: rgb(36, 84, 112); 
+  text-align: center; 
+  font-size: 10px; 
+} 
+
+nav { 
+  text-align: left; 
+  padding: 5px 50px; 
+  margin: 0; width: 100%; 
+  border: 2px solid black; 
+  box-sizing: border-box; 
+  background-color: rgb(115, 157, 182); 
+} 
+
+a { 
+  margin: 0; 
+  color: black; 
+  font-size: 14px; 
+  
+}
+
+a:hover{
+  cursor: pointer;
+  color: rgb(4, 59, 94);
+}
+
+.odsylacz{
+  border-right: solid black 1px;
+  padding-right: 6px;
+
+}
+
+.ksiazki { 
+  margin: 0; 
+  padding: 0 20; 
+}
+  
+.ksiazki h2 { 
+  text-align: center; 
+  font-size: 18px; 
+  padding: 5px 0; 
+  margin: 0; 
+  border: 2px solid black; 
+  border-top: none; 
+  background-color: rgb(36, 84, 112); 
+}
+
+.zawartosc { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+} 
+
+.ksiazka { 
+  display: flex; 
+  align-items: flex-start; 
+  gap: 20px; 
+  width: 60%; 
+  margin: 20px 0; 
+  background-color: rgb(95, 136, 160); 
+  border: 1px solid black; 
+  border-radius: 10px; 
+  padding: 15px; 
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); 
+} 
+
+.okladka img { 
+  width: 200px; 
+  height: auto; 
+  border: 1px solid #000; 
+  display: block; 
+  margin: 0; 
+}
+
+.info { 
+  padding: 10px 16px; 
+  margin: 0; 
+  background-color: rgb(95, 136, 160); 
+  border-radius: 10px; 
+} 
+
+.Tytul, .info p { 
+  text-align: left; 
+} 
+
+.zawartosc-formularz{ 
+  margin-top: 40px; 
+  margin-left: 25%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+} 
+
+table{
+  background-color: rgb(121, 176, 207);
+  border-collapse: collapse;
+  width: 60%;
+}
+
+table td, table th{ 
+  border-collapse: collapse; 
+  font-size: 15px; 
+  border: solid black 2px;
+  padding: 10px;
+  text-align: center;
+} 
+
+table th{
+  background-color: rgb(19, 81, 117);
+}
+
+table td:first-child {
+  vertical-align: top;
+  padding-top: 8px;
+  padding-right: 25px; 
+  text-align: right; 
+}
+
+table td:last-child {
+  padding-left: 10px;
+}
+
+caption{
+  border: solid black 2px;
+  padding: 10px;
+  background-color: rgb(19, 81, 117);
+  text-align: center;
+}
+
+.przycisk button{
+  width: 150px;
+  margin-top: 20px;                                                       
+  padding: 7px;
+  background-color: rgb(91, 174, 223);
+  text-align: center;
+}
+
+.przycisk button:hover{
+  cursor: pointer;
+  background-color: rgb(147, 189, 243);
+}
+
+.zawartosc-formularz form input[type="text"], 
+.zawartosc-formularz form input[type="number"] { 
+  width: 150px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid black;
+  font-size: 15px;
+  background-color: #f5f5f5;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+ }
+
+.przycisk {
+  display: flex;
+  justify-content: flex-end; 
+  width: 60%;         
+}
+
+
+textarea[name="opis"] {
+  width: 400px;
+  height: 90px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+
+input[type="reset"],
+input[type="submit"] {
+  text-align: center;
+  font-size: 16px;width: 250px;
+  font-weight: bold;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  width: 160px;
+}
+
+input[type="reset"] {
+  background-color: rgb(37, 80, 105); 
+  color: black;
+
+}
+
+input[type="reset"]:hover{
+  cursor: pointer;
+  background-color: rgb(55, 119, 156);
+}
+
+input[type="submit"] {
+  background-color: rgb(152, 205, 236); 
+  color: black;
+}
+
+input[type="submit"]:hover{
+  cursor: pointer;
+  background-color: rgb(91, 174, 223);
+}
+
+.tabela{ 
+  margin-top: 40px; 
+  margin-left: 25%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+} 
