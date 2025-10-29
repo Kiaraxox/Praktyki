@@ -116,7 +116,7 @@ table td, table th{
 } 
 
 table th{
-  background-color: rgb(19, 81, 117);
+  background-color: rgb(40, 83, 109);
 }
 
 table td:first-child {
@@ -133,7 +133,7 @@ table td:last-child {
 caption{
   border: solid black 2px;
   padding: 10px;
-  background-color: rgb(19, 81, 117);
+  background-color: rgb(40, 83, 109);
   text-align: center;
 }
 
@@ -143,6 +143,7 @@ caption{
   padding: 7px;
   background-color: rgb(91, 174, 223);
   text-align: center;
+  border-radius: 10px;
 }
 
 .przycisk button:hover{
@@ -150,8 +151,7 @@ caption{
   background-color: rgb(147, 189, 243);
 }
 
-.zawartosc-formularz form input[type="text"], 
-.zawartosc-formularz form input[type="number"] { 
+.zawartosc-formularz-pole { 
   width: 150px;
   padding: 6px;
   border-radius: 6px;
@@ -177,7 +177,7 @@ textarea[name="opis"] {
 
 
 input[type="reset"],
-input[type="submit"] {
+input[type="button"] {
   text-align: center;
   font-size: 16px;width: 250px;
   font-weight: bold;
@@ -204,7 +204,7 @@ input[type="submit"] {
   color: black;
 }
 
-input[type="submit"]:hover{
+input[type="button"]:hover{
   cursor: pointer;
   background-color: rgb(91, 174, 223);
 }
@@ -216,3 +216,29 @@ input[type="submit"]:hover{
   flex-direction: column; 
   align-items: flex-start; 
 } 
+
+form > div {
+  margin: 10px 20px;
+}
+
+form p{
+  float: left;
+  margin: 0;
+  padding-top: 6px;
+  width: 100px;
+}
+
+.przyciski{
+  display: flex;
+  justify-content: flex-end;
+}
+
+input.blad_walidacji {
+  width: 150px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 2px solid red;
+  font-size: 15px;
+  background-color: #f5f5f5;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+}

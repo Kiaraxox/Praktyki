@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
+    <script src="script.js"></script>
     <title>Księgarnia</title>
 </head>
 <body>
@@ -25,50 +26,46 @@
 
     <div class="zawartosc-formularz">
         <form action="" method="POST">
-            <table>
 
-            <tr>
-            <td><strong>Tytuł</strong></td> 
-            <td><input type="text" name="Tytul"></td>
-            </tr>
+            <div>
+                <p><strong>Tytuł</strong></p>
+                <input type="text" name="Tytul" id="tytul" class="zawartosc-formularz-pole">
+            </div>
 
-            <tr>
-            <td><strong>Autor</strong></td> 
-            <td><input type="text" name="Autor"></td>
-            </tr>
+            <div>
+                <p><strong>Autor</strong></p>
+                <input type="text" name="Autor" id="autor" class="zawartosc-formularz-pole">
+            </div>
 
-            <tr>
-            <td><strong>Cena</strong></td> 
-            <td><input type="text" name="Cena"></td>
-            </tr>
+            <div>
+                <p><strong>Cena</strong></p>
+                <input type="text" name="Cena" id="cena" class="zawartosc-formularz-pole">
+            </div>
 
-            <tr>
-            <td><strong>ISBN</strong></td> 
-            <td><input type="number" name="ISBN"></td>
-            </tr>
+            <div>
+                <p><strong>ISBN</strong></p>
+                <input type="number" name="ISBN" id="ISBN" class="zawartosc-formularz-pole">
+            </div>
 
-           <tr>
-            <td><strong>Ilość</strong></td> 
-            <td><input type="number" name="Ilosc"></td>
-            </tr>
+            <div>
+                <p><strong>Ilość</strong></p>
+                <input type="number" name="Ilosc" id="ilosc" class="zawartosc-formularz-pole">
+            </div>
 
-            <tr>
-            <td><strong>Strony</strong></td> 
-            <td><input type="number" name="strony"></td>
-            </tr>
+            <div>
+                <p><strong>Strony</strong></p>
+                <input type="number" name="strony" id="strony" class="zawartosc-formularz-pole">
+            </div>
 
-           <tr>
-            <td><strong>Opis</strong></td> 
-            <td><textarea type="text" name="opis"></textarea></td>
-            </tr>
+            <div>
+                <p><strong>Opis</strong></p>
+                <textarea type="text" name="opis" id="Opis" class="zawartosc-formularz-pole"></textarea>
+            </div>
 
-            <tr>
-            <td colspan="2">
-            <input type="reset" value="Wyczyść">
-            <input type="submit" value="Zapisz">
-            </td>
-            </tr>
-            </table>
+            <div class="przyciski">
+                <input type="reset" value="Wyczyść">
+                <input type="button" value="Zapisz" onclick="walidacja()">
+            </div>
         </form>
     </div>
 </body>
