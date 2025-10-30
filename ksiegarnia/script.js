@@ -1,9 +1,9 @@
 function walidacja() {
     const MAX_DLUGOSC_TYTULU = 100;
     const MAX_DLUGOSC_AUTORA = 46;
-    const MAX_DLUGOSC_CENY = 6;
+    const MIN_DLUGOSC_CENY  = 0;
+    const MIN_DLUGOSC_STRON = 0;
     const MAX_DLUGOSC_ISBN = 17;
-    const MAX_DLUGOSC_STRON = 100;
     const MAX_DLUGOSC_OPISU = 200;
 
 
@@ -34,7 +34,7 @@ function walidacja() {
     }
 
     
-    if(pole_cena.value == "" || pole_cena.value.length > MAX_DLUGOSC_CENY)
+    if(pole_cena.value == "" || Number(pole_cena.value) < MIN_DLUGOSC_CENY )
     {
         pole_cena.className = "blad_walidacji";
     }
@@ -61,7 +61,7 @@ function walidacja() {
     }
 
 
-    if(pole_strony.value == "" || pole_strony.value.length > MAX_DLUGOSC_STRON)
+    if(pole_strony.value == "" || Number(pole_strony.value) < MIN_DLUGOSC_STRON)
     {
         pole_strony.className = "blad_walidacji";
     }
