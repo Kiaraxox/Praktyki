@@ -1,6 +1,4 @@
 <?php
-$connect = mysqli_connect("localhost", "root", "", "ksiegarnia");
-
    $tytul = "";
    $autor = "";
    $cena = "";
@@ -9,34 +7,77 @@ $connect = mysqli_connect("localhost", "root", "", "ksiegarnia");
    $strony = "";
    $opis = "";
 
+    $connect = mysqli_connect("localhost", "root", "", "ksiegarnia");
+
+    function zapisz_do_bazy($sql)
+    {
+        global $connect;
+        return mysqli_query($connect, $sql);
+    }
+
+    function pobierz_dane_z_formularza($nazwa_pola)
+    {
+        if(isset($_POST[$nazwa_pola]))
+            return $_POST[$nazwa_pola];
+    }
+
     if (isset($_POST["nowa-ksiazka"])) {
 
-        if (isset($_POST["Tytul"]) && (isset($_POST["ISBN"]))){
-            $tytul = $_POST["Tytul"];
-            $isbn = $_POST["ISBN"];
-            $sql = "INSERT INTO `ksiazki`(Tytul, ISBN) VALUES ('$tytul', '$isbn');";
-             mysqli_query($connect,$sql);
+        $tytul = pobierz_dane_z_formularza("Tytul");
+        $isbn = pobierz_dane_z_formularza("ISBN");
+           
+        if (!empty($tytul) && !empty($isbn)){
+             $sql = "INSERT INTO ksiazki (Tytul, ISBN) VALUES ('$tytul', '$isbn')";
+            
+            if(zapisz_do_bazy($sql)){
+                 $id_ksiazki = mysqli_insert_id($connect);
+            }
         }
         
-        if(isset($_POST["Autor"])){
-            $autor = $_POST["Autor"];
+        $autor = pobierz_dane_z_formularza("Autor");
+
+        if(!empty($autor)) {
+            $imie_nazwisko = explode(" ", $autor);
+            $imie = $imie_nazwisko[0];
+            $nazwisko = implode(" ", array_slice($imie_nazwisko, 1));
+            $sql = "INSERT INTO autorzy (Imie, Nazwisko) VALUES ('$imie', '$nazwisko')";
+
+            if(zapisz_do_bazy($sql)){
+                 $id_autora = mysqli_insert_id($connect);
+            }
+
+            if (!empty($id_ksiazki) && !empty($id_autora)) {
+                $sql = "INSERT INTO ksiazkazautorem (IDKsiazki, IDAutora) VALUES ('$id_ksiazki', '$id_autora')";
+                zapisz_do_bazy($sql);
+    }
+
         }
 
-        if(isset($_POST["Cena"]) && (isset($_POST["Ilosc"]))){
-            $ilosc = $_POST["Ilosc"];
-            $cena = $_POST["Cena"];
-            $sql = "INSERT INTO `magazyn`(Cena, Ilosc) VALUES ('$cena', '$ilosc');";
-            mysqli_query($connect,$sql);
+          $cena = pobierz_dane_z_formularza("Cena");
+          $ilosc = pobierz_dane_z_formularza("Ilosc");
+           
+        if (!empty($cena) && !empty($ilosc)){
+             $sql = "INSERT INTO magazyn (IDKsiazki, Cena, Ilosc) VALUES ('$id_ksiazki', '$cena', '$ilosc')";
+            
+            if(zapisz_do_bazy($sql)){
+                 $id_ksiazki = mysqli_insert_id($connect);
+            }
+
         }
 
         if(isset($_POST["strony"])){
             $strony = $_POST["strony"];
         }
 
-        if(isset($_POST["opis"])){
-            $opis = $_POST["opis"];
-            $sql = "INSERT INTO `szczegoloweinformacje`(Opis) VALUES ('$opis');";
-             mysqli_query($connect,$sql);
+        $opis = pobierz_dane_z_formularza("opis");
+
+        if(!empty($opis)){
+           $sql = "INSERT INTO szczegoloweinformacje (IDKsiazki, Opis) VALUES ('$id_ksiazki', '$opis')";
+
+            if(zapisz_do_bazy($sql)){
+                 $id_ksiazki = mysqli_insert_id($connect);
+            }
+             
         }
 
         }
