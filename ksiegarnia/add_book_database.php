@@ -78,7 +78,7 @@
         $opis = pobierz_dane_z_formularza("opis");
         $strony = pobierz_dane_z_formularza("opis");
 
-        if(!empty($opis) && !empty($ilosc)){
+        if(!empty($opis) && !empty($strony)){
            $sql = "INSERT INTO szczegoloweinformacje (IDKsiazki, Opis, Strony) VALUES ('$id_ksiazki', '$opis', '$strony')";
 
             if(zapisz_do_bazy($sql)){
@@ -90,4 +90,5 @@
     }
 
         
+
 ?>
